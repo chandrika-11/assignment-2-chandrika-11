@@ -65,4 +65,9 @@ public class MyCircularQueue {
         }
         return temp;
     }
+
+    public void zeroBacklog() {
+        Node before = getRear();
+        Node ahead = getFront();
+    }
 }
