@@ -85,4 +85,8 @@ public class MyBinarySearchTree {
   }
  }
 
+ public ArrayList<Integer> getPreOrderList() {
+
+  return arrayList;
+ }
 }
