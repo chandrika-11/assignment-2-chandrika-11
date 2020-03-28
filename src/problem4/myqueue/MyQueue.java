@@ -38,4 +38,18 @@ public class MyQueue {
         }
     }
 
+    public Node deQueue() {
+        Node temp;
+        if (getFront() == null) {
+            return null;
+        } else if (getFront().getNext() == null) {
+            temp = getFront();
+            setFront(null);
+            setRear(null);
+        } else {
+            temp = getFront();
+            setFront(getFront().getNext());
+        }
+        return temp;
+    }
 }
