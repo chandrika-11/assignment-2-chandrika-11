@@ -61,6 +61,11 @@ public class MyBinarySearchTree {
   if (isLeft)
    System.out.println(node);
 
+  if (node.getLeftNode() == null) {
+   c++;
+  }
+  c = c + showLeft(node.getLeftNode(), true);
+  c = c + showLeft(node.getRightNode(), false);
   return c;
  }
 
