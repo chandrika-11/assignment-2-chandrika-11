@@ -28,7 +28,12 @@ public class MyBinarySearchTree {
   this.root = root;
  }
 
- public void insert() {
+ public void insert(TreeNode newNode) {
+  if (getRoot() == null) {
+   setRoot(newNode);
+   return;
+  }
+
 
  }
 }
