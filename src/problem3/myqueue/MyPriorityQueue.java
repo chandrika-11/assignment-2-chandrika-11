@@ -18,4 +18,11 @@ public class MyPriorityQueue {
         this.front = front;
     }
 
+    public void enQueue(Node newNode) {
+        Node temp = getFront();
+        if (getFront() == null || getFront().getStudent().getRollNumber() > newNode.getStudent().getRollNumber()) {
+            setFront(newNode);
+            getFront().setNextNode(temp);
+        }
+    }
 }
