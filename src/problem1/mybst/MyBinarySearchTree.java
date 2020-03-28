@@ -20,4 +20,8 @@ public class MyBinarySearchTree {
   arrayList = new ArrayList<>();
  }
 
+ public TreeNode getRoot() {
+  return root;
+ }
+
 }
