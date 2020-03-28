@@ -70,23 +70,24 @@ public class MyBinarySearchTree {
  }
 
  public void showTreeData(TreeNode node) {
-  if (node == null) {
-   System.out.println(node);
-   showTreeData(node.getLeftNode());
-   showTreeData(node.getRightNode());
-  }
+  System.out.println(node);
+  showTreeData(node.getLeftNode());
+  showTreeData(node.getRightNode());
  }
 
  private void addElementToList(TreeNode node) {
-  if (node == null) {
-   arrayList.add(node.getData());
-   addElementToList(node.getLeftNode());
-   addElementToList(node.getRightNode());
-  }
+  arrayList.add(node.getData());
+  addElementToList(node.getLeftNode());
+  addElementToList(node.getRightNode());
  }
 
  public ArrayList<Integer> getPreOrderList() {
   addElementToList(getRoot());
   return arrayList;
  }
+
+ public void PostOrderTraversal() {
+
+ }
+
 }
