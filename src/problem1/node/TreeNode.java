@@ -31,4 +31,8 @@ public class TreeNode {
         return right;
     }
 
+    public void setRight() {
+        this.right = right;
+    }
+
 }
