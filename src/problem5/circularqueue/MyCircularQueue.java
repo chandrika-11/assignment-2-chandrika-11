@@ -40,4 +40,7 @@ public class MyCircularQueue {
         }
     }
 
+    public void traverseQueue() {
+
+    }
 }
