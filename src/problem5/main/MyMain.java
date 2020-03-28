@@ -37,9 +37,14 @@ public class MyMain {
             circularQueue.enQueue(node);
             records--;
         }
-
-
+        System.out.println("-----------------------");
+        System.out.println("Original Data before deletion");
+        circularQueue.traverseQueue();
+        System.out.println("------------------------");
+        System.out.println("Data after removing zero backlog");
+        circularQueue.removeZeroBacklog();
+        System.out.println("-------------------------");
+        System.out.println("Data after removing records");
+        circularQueue.traverseQueue();
     }
-
-
 }
