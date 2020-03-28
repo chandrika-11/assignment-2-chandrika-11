@@ -31,7 +31,7 @@ public class TreeNode {
         return rightNode;
     }
 
-    public void setRightNode() {
+    public void setRightNode(TreeNode rightNode) {
         this.rightNode = rightNode;
     }
 
