@@ -5,7 +5,30 @@
  *  Time: 7:11 PM
  */
 package problem4.myqueue;
+import problem4.node.Node;
 // to create queue to store pre - order successor
 
 public class MyQueue {
+    private Node front;
+    private Node rear;
+
+    public Node getFront() {
+        return front;
+    }
+
+    public void setFront(Node front) {
+        this.front = front;
+    }
+
+    public Node getRear() {
+        return rear;
+    }
+
+    public void setRear(Node rear) {
+        this.rear = rear;
+    }
+
+    public void enQueue(Node newNode) {
+
+    }
 }
