@@ -55,6 +55,11 @@ public class MyBinarySearchTree {
 
  public int showLeft(TreeNode node, boolean isLeft) {
   int c = 0;
+  if (node == null)
+   return c;
+
+  if (isLeft)
+   System.out.println(node);
 
   return c;
  }
