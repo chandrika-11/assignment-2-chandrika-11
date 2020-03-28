@@ -7,16 +7,36 @@
 package problem5.main;
 
 import problem5.circularqueue.MyCircularQueue;
+import problem5.node.Node;
+import problem5.student.Student;
 
 import java.util.Scanner;
-
 //executable class
 public class MyMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        MyCircularQueue circularqueue = new MyCircularQueue();
+        MyCircularQueue circularQueue = new MyCircularQueue();
         System.out.println("Enter number of records=");
         int records = scanner.nextInt();
+        while (records != 0) {
+            Student student = new Student();
+            Node node = new Node();
+
+            System.out.println("Enter name=");
+            student.setName(scanner.next().trim());
+            System.out.println("Enter roll number=");
+            student.setRollNumber(scanner.nextInt());
+            System.out.println("Enter backlogs=");
+            int backlogs = scanner.nextInt();
+            if (backlogs > 2) {
+                System.out.println("The student is not allowed");
+                continue;
+            }
+            student.setBackLogCount(backlogs);
+            node.setStudent(student);
+            circularQueue.enQueue(node);
+            records--;
+        }
 
 
     }
