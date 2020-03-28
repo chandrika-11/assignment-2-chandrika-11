@@ -78,6 +78,11 @@ public class MyBinarySearchTree {
  }
 
  private void addElementToList(TreeNode node) {
-
+  if (node == null) {
+   arrayList.add(node.getData());
+   addElementToList(node.getLeftNode());
+   addElementToList(node.getRightNode());
+  }
  }
+
 }
