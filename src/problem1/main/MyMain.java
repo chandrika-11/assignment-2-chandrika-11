@@ -18,7 +18,7 @@ public class MyMain {
         MyBinarySearchTree bst = new MyBinarySearchTree();
         System.out.println("Enter number of nodes=");
         int n = scanner.nextInt();
-        while (n > 0) {
+        while (n-- > 0) {
             System.out.println("Enter data=");
             int element = scanner.nextInt();
             TreeNode node = new TreeNode();
