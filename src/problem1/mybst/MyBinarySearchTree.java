@@ -70,15 +70,19 @@ public class MyBinarySearchTree {
  }
 
  public void showTreeData(TreeNode node) {
-  System.out.println(node);
-  showTreeData(node.getLeftNode());
-  showTreeData(node.getRightNode());
+  if (node != null) {
+   System.out.println(node);
+   showTreeData(node.getLeftNode());
+   showTreeData(node.getRightNode());
+  }
  }
 
  private void addElementToList(TreeNode node) {
-  arrayList.add(node.getData());
-  addElementToList(node.getLeftNode());
-  addElementToList(node.getRightNode());
+  if (node != null) {
+   arrayList.add(node.getData());
+   addElementToList(node.getLeftNode());
+   addElementToList(node.getRightNode());
+  }
  }
 
  public ArrayList<Integer> getPreOrderList() {
@@ -86,8 +90,12 @@ public class MyBinarySearchTree {
   return arrayList;
  }
 
- public void PostOrderTraversal() {
-
+ public void postOrderTraversal(TreeNode node) {
+  if (node != null) {
+   postOrderTraversal(node.getLeftNode());
+   postOrderTraversal(node.getRightNode());
+   System.out.println(node);
+  }
  }
 
 }
