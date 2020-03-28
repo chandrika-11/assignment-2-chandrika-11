@@ -53,5 +53,11 @@ public class MyBinarySearchTree {
   }
  }
 
+ public int showLeft(TreeNode node, boolean isLeft) {
+  int c = 0;
+
+  return c;
+ }
+
 
 }
